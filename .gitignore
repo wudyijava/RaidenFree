@@ -1,0 +1,13 @@
+obj
+gen
+bin
+.settings
+/proj.win32/Raiden.opensdf
+/proj.win32/Raiden.v12.suo
+Debug.win32
+/proj.win32/*.sdf
+/SQLiteStudio.exe.lnk
+/package
+.idea
+¹Ø¿¨Éè¼Æ
+build

@@ -1,0 +1,252 @@
+#include "Guide.h"
+#include "PromptLayer.h"
+
+////////////////////////////////////////////////////////////////
+//
+//  首次进入游戏的介绍
+//
+////////////////////////////////////////////////////////////////
+class GuideWelcomeGirl : public Guide
+{
+public:
+	DECLARE_GUIDE(GuideWelcomeGirl);
+
+public:
+	virtual bool doInit() override;
+};
+
+////////////////////////////////////////////////////////////////
+//
+//  首次进入游戏，点击闯关模式
+//
+////////////////////////////////////////////////////////////////
+class GuideWelcomeClickButtonLevel : public Guide
+{
+public:
+	DECLARE_GUIDE(GuideWelcomeClickButtonLevel);
+
+public:
+	virtual bool doInit() override;
+};
+
+////////////////////////////////////////////////////////////////
+//
+//  首次进入游戏，点击第一关
+//
+////////////////////////////////////////////////////////////////
+class GuideWelcomeClickMissionOne : public Guide
+{
+public:
+	DECLARE_GUIDE(GuideWelcomeClickMissionOne);
+
+public:
+	virtual bool doInit() override;
+};
+
+////////////////////////////////////////////////////////////////
+//
+//  战机的中心是支持飞机的动力源，只要不被击中就可以继续战斗
+//
+////////////////////////////////////////////////////////////////
+// 不单独做引导，改用对话的形式
+
+////////////////////////////////////////////////////////////////
+//
+//  所有道具的说明
+//
+////////////////////////////////////////////////////////////////
+class GuideGameEquipment : public Guide
+{
+public:
+	DECLARE_GUIDE(GuideGameEquipment);
+
+public:
+	virtual bool doInit() override;
+};
+
+////////////////////////////////////////////////////////////////
+//
+//  必杀引导
+//
+////////////////////////////////////////////////////////////////
+class GuideGameKiller : public Guide
+{
+public:
+	DECLARE_GUIDE(GuideGameKiller);
+
+public:
+	virtual bool doInit() override;
+};
+
+////////////////////////////////////////////////////////////////
+//
+//  护盾引导
+//
+////////////////////////////////////////////////////////////////
+
+class GuideGameShield : public Guide
+{
+public:
+	DECLARE_GUIDE(GuideGameShield);
+
+public:
+	virtual bool doInit() override;
+};
+
+////////////////////////////////////////////////////////////////
+//
+//  仓库引导
+//
+////////////////////////////////////////////////////////////////
+
+class GuideMenuBag : public Guide
+{
+public:
+	DECLARE_GUIDE(GuideMenuBag);
+
+public:
+	virtual bool doInit() override;
+};
+
+class GuideMenuBag1 : public Guide
+{
+public:
+	DECLARE_GUIDE(GuideMenuBag1);
+
+public:
+	virtual bool doInit() override;
+};
+
+class GuideMenuBag2 : public Guide
+{
+public:
+	DECLARE_GUIDE(GuideMenuBag2);
+
+public:
+	virtual bool doInit() override;
+};
+
+////////////////////////////////////////////////////////////////
+//
+//  强化引导
+//
+////////////////////////////////////////////////////////////////
+
+class GuideMenuStrengthen : public Guide
+{
+public:
+	DECLARE_GUIDE(GuideMenuStrengthen);
+
+public:
+	virtual bool doInit() override;
+};
+
+class GuideMenuStrengthen1 : public Guide
+{
+public:
+	DECLARE_GUIDE(GuideMenuStrengthen1);
+
+public:
+	virtual bool doInit() override;
+};
+
+class GuideMenuStrengthen2 : public Guide
+{
+public:
+	DECLARE_GUIDE(GuideMenuStrengthen2);
+
+public:
+	virtual bool doInit() override;
+};
+
+////////////////////////////////////////////////////////////////
+//
+//  成就奖励引导
+//
+////////////////////////////////////////////////////////////////
+
+class GuideMenuReward : public Guide
+{
+public:
+	DECLARE_GUIDE(GuideMenuReward);
+
+public:
+	virtual bool doInit() override;
+};
+
+////////////////////////////////////////////////////////////////
+//
+//  无尽模式引导
+//
+////////////////////////////////////////////////////////////////
+
+class GuideModeEndless : public Guide
+{
+public:
+	DECLARE_GUIDE(GuideModeEndless);
+
+public:
+	virtual bool doInit() override;
+};
+
+////////////////////////////////////////////////////////////////
+//
+//  急速模式引导
+//
+////////////////////////////////////////////////////////////////
+
+class GuideModeRapid : public Guide
+{
+public:
+	DECLARE_GUIDE(GuideModeRapid);
+
+public:
+	virtual bool doInit() override;
+};
+
+////////////////////////////////////////////////////////////////
+//
+//  英雄、炼狱难度引导
+//
+////////////////////////////////////////////////////////////////
+class GuideDifficulty2 : public Guide
+{
+public:
+	DECLARE_GUIDE(GuideDifficulty2);
+
+public:
+	virtual bool doInit() override;
+};
+
+////////////////////////////////////////////////////////////////
+class GuideDifficulty3 : public Guide
+{
+public:
+	DECLARE_GUIDE(GuideDifficulty3);
+
+public:
+	virtual bool doInit() override;
+};
+
+////////////////////////////////////////////////////////////////
+//
+//  战机2/3开启
+//
+////////////////////////////////////////////////////////////////
+class GuideAircraft2Open : public Guide
+{
+public:
+	DECLARE_GUIDE(GuideAircraft2Open);
+
+public:
+	virtual bool doInit() override;
+};
+
+class GuideAircraft3Open : public Guide
+{
+public:
+	DECLARE_GUIDE(GuideAircraft3Open);
+
+public:
+	virtual bool doInit() override;
+};

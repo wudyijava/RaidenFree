@@ -1,0 +1,514 @@
+<Solution>
+  <PropertyGroup Name="Raiden" Version="2.3.2.3" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Project Name="GameUI.csd" Type="Scene" />
+        <PlistImageFolder Image="GameUI.png" PListFile="GameUI.plist" Name=".GameUI_PList.Dir">
+          <PlistImageFile Name="GameUI_Bg.png" Key="GameUI_Bg.png" />
+          <PlistImageFile Name="GameUI_Diamond_Img.png" Key="GameUI_Diamond_Img.png" />
+          <PlistImageFile Name="GameUI_Mult.png" Key="GameUI_Mult.png" />
+          <PlistImageFile Name="GameUI_Nuclear_Btn_Down.png" Key="GameUI_Nuclear_Btn_Down.png" />
+          <PlistImageFile Name="GameUI_Nuclear_Btn_Up.png" Key="GameUI_Nuclear_Btn_Up.png" />
+          <PlistImageFile Name="GameUI_Pause_Btn_Down.png" Key="GameUI_Pause_Btn_Down.png" />
+          <PlistImageFile Name="GameUI_Pause_Btn_Up.png" Key="GameUI_Pause_Btn_Up.png" />
+          <PlistImageFile Name="GameUI_Score_Img.png" Key="GameUI_Score_Img.png" />
+          <PlistImageFile Name="GameUI_Shield_Btn_Down.png" Key="GameUI_Shield_Btn_Down.png" />
+          <PlistImageFile Name="GameUI_Shield_Btn_Up.png" Key="GameUI_Shield_Btn_Up.png" />
+          <PlistImageFile Name="GameUI_Shop_Btn_Down.png" Key="GameUI_Shop_Btn_Down.png" />
+          <PlistImageFile Name="GameUI_Shop_Btn_Up.png" Key="GameUI_Shop_Btn_Up.png" />
+          <PlistImageFile Name="GameUI_Wingman_Btn_Down.png" Key="GameUI_Wingman_Btn_Down.png" />
+          <PlistImageFile Name="GameUI_Wingman_Btn_Up.png" Key="GameUI_Wingman_Btn_Up.png" />
+          <PlistImageFile Name="Hp_Prog.png" Key="Hp_Prog.png" />
+          <PlistImageFile Name="Life_Img.png" Key="Life_Img.png" />
+          <PlistImageFile Name="GameUI_Boss_Blood_Bg.png" Key="GameUI_Boss_Blood_Bg.png" />
+          <PlistImageFile Name="GameUI_Boss_Blood_Prog_1.png" Key="GameUI_Boss_Blood_Prog_1.png" />
+          <PlistImageFile Name="GameUI_Boss_Blood_Prog_2.png" Key="GameUI_Boss_Blood_Prog_2.png" />
+          <PlistImageFile Name="GameUI_Boss_Blood_Prog_3.png" Key="GameUI_Boss_Blood_Prog_3.png" />
+          <PlistImageFile Name="achievement_bg.png" Key="achievement_bg.png" />
+          <PlistImageFile Name="hp-bg.png" Key="hp-bg.png" />
+          <PlistImageFile Name="hp-fg.png" Key="hp-fg.png" />
+          <PlistImageFile Name="1.png" Key="1.png" />
+          <PlistImageFile Name="2.png" Key="2.png" />
+          <PlistImageFile Name="3.png" Key="3.png" />
+          <PlistImageFile Name="GameUI_Combo_Txt.png" Key="GameUI_Combo_Txt.png" />
+          <PlistImageFile Name="GameUI_Km_Txt.png" Key="GameUI_Km_Txt.png" />
+          <PlistImageFile Name="new_gift_icon.png" Key="new_gift_icon.png" />
+          <PlistImageFile Name="new_gift_light.png" Key="new_gift_light.png" />
+          <PlistImageFile Name="GameUI_Gift2_Bg.png" Key="GameUI_Gift2_Bg.png" />
+          <PlistImageFile Name="GameUI_Gift2_Bg2.png" Key="GameUI_Gift2_Bg2.png" />
+          <PlistImageFile Name="GameUI_Gift2_Light.png" Key="GameUI_Gift2_Light.png" />
+        </PlistImageFolder>
+        <Project Name="MainUI.csd" Type="Scene" />
+        <PlistImageFolder Image="MainUI.png" PListFile="MainUI.plist" Name=".MainUI_PList.Dir">
+          <PlistImageFile Name="Endless_Btn_Down.png" Key="Endless_Btn_Down.png" />
+          <PlistImageFile Name="Endless_Btn_Up.png" Key="Endless_Btn_Up.png" />
+          <PlistImageFile Name="Level_Btn_Down.png" Key="Level_Btn_Down.png" />
+          <PlistImageFile Name="Level_Btn_Up.png" Key="Level_Btn_Up.png" />
+          <PlistImageFile Name="MainUI_Arrow_L_Btn_Down.png" Key="MainUI_Arrow_L_Btn_Down.png" />
+          <PlistImageFile Name="MainUI_Arrow_L_Btn_Up.png" Key="MainUI_Arrow_L_Btn_Up.png" />
+          <PlistImageFile Name="MainUI_Arrow_R_Btn_Down.png" Key="MainUI_Arrow_R_Btn_Down.png" />
+          <PlistImageFile Name="MainUI_Arrow_R_Btn_Up.png" Key="MainUI_Arrow_R_Btn_Up.png" />
+          <PlistImageFile Name="MainUI_Btn_Bg1.png" Key="MainUI_Btn_Bg1.png" />
+          <PlistImageFile Name="MainUI_Btn_Bg2.png" Key="MainUI_Btn_Bg2.png" />
+          <PlistImageFile Name="MainUI_Btn_Bg3.png" Key="MainUI_Btn_Bg3.png" />
+          <PlistImageFile Name="MainUI_Btn_Bg4.png" Key="MainUI_Btn_Bg4.png" />
+          <PlistImageFile Name="MainUI_Prog.png" Key="MainUI_Prog.png" />
+          <PlistImageFile Name="Rapidly_Btn_Down.png" Key="Rapidly_Btn_Down.png" />
+          <PlistImageFile Name="Rapidly_Btn_Up.png" Key="Rapidly_Btn_Up.png" />
+          <PlistImageFile Name="Reward_Btn_Down.png" Key="Reward_Btn_Down.png" />
+          <PlistImageFile Name="Reward_Btn_Up.png" Key="Reward_Btn_Up.png" />
+          <PlistImageFile Name="Screen_Bg.png" Key="Screen_Bg.png" />
+          <PlistImageFile Name="Setup_Btn_Down.png" Key="Setup_Btn_Down.png" />
+          <PlistImageFile Name="Setup_Btn_Up.png" Key="Setup_Btn_Up.png" />
+          <PlistImageFile Name="Shop_Btn_Down.png" Key="Shop_Btn_Down.png" />
+          <PlistImageFile Name="Shop_Btn_Up.png" Key="Shop_Btn_Up.png" />
+          <PlistImageFile Name="Strengthen_Btn_Down.png" Key="Strengthen_Btn_Down.png" />
+          <PlistImageFile Name="Strengthen_Btn_Up.png" Key="Strengthen_Btn_Up.png" />
+          <PlistImageFile Name="MainUI_Arrow_Highlight.png" Key="MainUI_Arrow_Highlight.png" />
+          <PlistImageFile Name="MainUI_Reward_Btn.png" Key="MainUI_Reward_Btn.png" />
+          <PlistImageFile Name="MainUI_Reward_Message_Bg.png" Key="MainUI_Reward_Message_Bg.png" />
+          <PlistImageFile Name="MainUI_Reward_Message_Light.png" Key="MainUI_Reward_Message_Light.png" />
+          <PlistImageFile Name="Unlock_Btn_Down.png" Key="Unlock_Btn_Down.png" />
+          <PlistImageFile Name="Unlock_Btn_Up.png" Key="Unlock_Btn_Up.png" />
+          <PlistImageFile Name="Unopened_Btn_Up.png" Key="Unopened_Btn_Up.png" />
+          <PlistImageFile Name="Endless_Btn_Unopened.png" Key="Endless_Btn_Unopened.png" />
+          <PlistImageFile Name="Rapidly_Btn_Unopened.png" Key="Rapidly_Btn_Unopened.png" />
+        </PlistImageFolder>
+        <Folder Name="BigImg">
+          <Image Name="MainUI_Bg.jpg" />
+          <Image Name="BigScreen_Bg.png" />
+          <Image Name="Daily_Bg.png" />
+          <Image Name="Settle_Bg.jpg" />
+          <Image Name="Mission_Map1.jpg" />
+          <Image Name="Mission_Map2.jpg" />
+          <Image Name="Mission_Map3.jpg" />
+          <Image Name="Bag_Bg.png" />
+          <Image Name="Start_Bg.jpg" />
+          <Image Name="Guide_Dialog_Bg.png" />
+          <Image Name="Loading_Bg.png" />
+        </Folder>
+        <Folder Name="Com">
+          <Image Name="GameUI_Num.png" />
+          <Image Name="MainUI_Num1.png" />
+          <Image Name="MainUI_Num2.png" />
+          <Image Name="MainUI_Diamond_Img.png" />
+          <Image Name="Shop_Num.png" />
+          <Image Name="Black_Bg.png" />
+          <Image Name="Daily_Prop_Num.png" />
+          <Image Name="Settle_Num1.png" />
+          <Image Name="Mission_Num1.png" />
+          <Image Name="GameUI_Combo_Num.png" />
+          <Image Name="telcom_anno.png" />
+        </Folder>
+        <Project Name="Setup.csd" Type="Scene" />
+        <PlistImageFolder Image="Setup.png" PListFile="Setup.plist" Name=".Setup_PList.Dir">
+          <PlistImageFile Name="About_Btn_Down.png" Key="About_Btn_Down.png" />
+          <PlistImageFile Name="About_Btn_Up.png" Key="About_Btn_Up.png" />
+          <PlistImageFile Name="Exchange_Btn_Down.png" Key="Exchange_Btn_Down.png" />
+          <PlistImageFile Name="Exchange_Btn_Up.png" Key="Exchange_Btn_Up.png" />
+          <PlistImageFile Name="Help_Btn_Down.png" Key="Help_Btn_Down.png" />
+          <PlistImageFile Name="Help_Btn_Up.png" Key="Help_Btn_Up.png" />
+          <PlistImageFile Name="Help_Img.png" Key="Help_Img.png" />
+          <PlistImageFile Name="Setup1_Btn_Down.png" Key="Setup1_Btn_Down.png" />
+          <PlistImageFile Name="Setup1_Btn_Up.png" Key="Setup1_Btn_Up.png" />
+          <PlistImageFile Name="Setup_Bg.png" Key="Setup_Bg.png" />
+          <PlistImageFile Name="Setup_Img.png" Key="Setup_Img.png" />
+          <PlistImageFile Name="Setup_Screen_Bg.png" Key="Setup_Screen_Bg.png" />
+          <PlistImageFile Name="About_Line.png" Key="About_Line.png" />
+        </PlistImageFolder>
+        <Project Name="Reward.csd" Type="Scene" />
+        <PlistImageFolder Image="Reward.png" PListFile="Reward.plist" Name=".Reward_PList.Dir">
+          <PlistImageFile Name="Receive_Btn_Down.png" Key="Receive_Btn_Down.png" />
+          <PlistImageFile Name="Receive_Btn_Up.png" Key="Receive_Btn_Up.png" />
+          <PlistImageFile Name="Received_Btn.png" Key="Received_Btn.png" />
+          <PlistImageFile Name="Reward_Screen_Little_Bg.png" Key="Reward_Screen_Little_Bg.png" />
+          <PlistImageFile Name="Reward_Txt7.png" Key="Reward_Txt7.png" />
+        </PlistImageFolder>
+        <Project Name="Shop.csd" Type="Scene" />
+        <PlistImageFolder Image="Shop.png" PListFile="Shop.plist" Name=".Shop_PList.Dir">
+          <PlistImageFile Name="Shop_Bg1.png" Key="Shop_Bg1.png" />
+          <PlistImageFile Name="Shop_Bg2.png" Key="Shop_Bg2.png" />
+          <PlistImageFile Name="Shop_Bg3.png" Key="Shop_Bg3.png" />
+          <PlistImageFile Name="Shop_Bg4.png" Key="Shop_Bg4.png" />
+          <PlistImageFile Name="Shop_Bg5.png" Key="Shop_Bg5.png" />
+          <PlistImageFile Name="Shop_Bg6.png" Key="Shop_Bg6.png" />
+        </PlistImageFolder>
+        <Project Name="Instruction.csd" Type="Node" />
+        <PlistImageFolder Image="Instruction.png" PListFile="Instruction.plist" Name=".Instruction_PList.Dir">
+          <PlistImageFile Name="Instruction_Txt.png" Key="Instruction_Txt.png" />
+          <PlistImageFile Name="Know_Btn_Down.png" Key="Know_Btn_Down.png" />
+          <PlistImageFile Name="Know_Btn_Up.png" Key="Know_Btn_Up.png" />
+        </PlistImageFolder>
+        <Project Name="Buyplane.csd" Type="Scene" />
+        <Project Name="Daily.csd" Type="Scene" />
+        <PlistImageFolder Image="Daily.png" PListFile="Daily.plist" Name=".Daily_PList.Dir">
+          <PlistImageFile Name="Daily_Prop_Bg.png" Key="Daily_Prop_Bg.png" />
+          <PlistImageFile Name="Received_Btn_Down.png" Key="Received_Btn_Down.png" />
+          <PlistImageFile Name="Received_Btn_Up.png" Key="Received_Btn_Up.png" />
+          <PlistImageFile Name="Daily_Received_Img.png" Key="Daily_Received_Img.png" />
+          <PlistImageFile Name="Daily_Prop_Diamond.png" Key="Daily_Prop_Diamond.png" />
+          <PlistImageFile Name="Daily_Prop_Gift.png" Key="Daily_Prop_Gift.png" />
+          <PlistImageFile Name="Daily_Prop_Nuclear.png" Key="Daily_Prop_Nuclear.png" />
+          <PlistImageFile Name="Daily_Prop_Shield.png" Key="Daily_Prop_Shield.png" />
+          <PlistImageFile Name="Daily_Prop_Wingman.png" Key="Daily_Prop_Wingman.png" />
+          <PlistImageFile Name="Daily_Item_Plane07.png" Key="Daily_Item_Plane07.png" />
+          <PlistImageFile Name="Vip_Btn_Down.png" Key="Vip_Btn_Down.png" />
+          <PlistImageFile Name="Vip_Btn_Up.png" Key="Vip_Btn_Up.png" />
+          <PlistImageFile Name="Vip_Continue_Btn_Down.png" Key="Vip_Continue_Btn_Down.png" />
+          <PlistImageFile Name="Vip_Continue_Btn_Up.png" Key="Vip_Continue_Btn_Up.png" />
+          <PlistImageFile Name="Vip_Double_Recv_Txt.png" Key="Vip_Double_Recv_Txt.png" />
+          <PlistImageFile Name="Giveup_Btn_Down.png" Key="Giveup_Btn_Down.png" />
+          <PlistImageFile Name="Giveup_Btn_Up.png" Key="Giveup_Btn_Up.png" />
+          <PlistImageFile Name="Online_Propmt_Txt.png" Key="Online_Propmt_Txt.png" />
+          <PlistImageFile Name="Received_Btn_Disable.png" Key="Received_Btn_Disable.png" />
+          <PlistImageFile Name="Vip_Btn_Disable.png" Key="Vip_Btn_Disable.png" />
+          <PlistImageFile Name="Vip_Continue_Btn_Disable.png" Key="Vip_Continue_Btn_Disable.png" />
+        </PlistImageFolder>
+        <PlistImageFolder Image="Settle.png" PListFile="Settle.plist" Name=".Settle_PList.Dir">
+          <PlistImageFile Name="Lose_Bg.png" Key="Lose_Bg.png" />
+          <PlistImageFile Name="Settle_Num1.png" Key="Settle_Num1.png" />
+          <PlistImageFile Name="Win_Star.png" Key="Win_Star.png" />
+          <PlistImageFile Name="Win_Txt1.png" Key="Win_Txt1.png" />
+          <PlistImageFile Name="Best_Distance.png" Key="Best_Distance.png" />
+          <PlistImageFile Name="Connecting_Web.png" Key="Connecting_Web.png" />
+          <PlistImageFile Name="Current_Distance.png" Key="Current_Distance.png" />
+          <PlistImageFile Name="Distance_Rank.png" Key="Distance_Rank.png" />
+          <PlistImageFile Name="Get_Rank_Failed.png" Key="Get_Rank_Failed.png" />
+          <PlistImageFile Name="Retry_Btn_Down.png" Key="Retry_Btn_Down.png" />
+          <PlistImageFile Name="Retry_Btn_Up.png" Key="Retry_Btn_Up.png" />
+          <PlistImageFile Name="Continue_Btn_Down_2.png" Key="Continue_Btn_Down_2.png" />
+          <PlistImageFile Name="Continue_Btn_Up_2.png" Key="Continue_Btn_Up_2.png" />
+          <PlistImageFile Name="Get_Piece_Txt.png" Key="Get_Piece_Txt.png" />
+          <PlistImageFile Name="Vip_Piece_Prompt.png" Key="Vip_Piece_Prompt.png" />
+          <PlistImageFile Name="Win_Star_Bg.png" Key="Win_Star_Bg.png" />
+          <PlistImageFile Name="Win_Txt2.png" Key="Win_Txt2.png" />
+          <PlistImageFile Name="Win_Txt3.png" Key="Win_Txt3.png" />
+          <PlistImageFile Name="Win_Txt4.png" Key="Win_Txt4.png" />
+          <PlistImageFile Name="Win_Txt5.png" Key="Win_Txt5.png" />
+          <PlistImageFile Name="Vip_Btn_2_Down.png" Key="Vip_Btn_2_Down.png" />
+          <PlistImageFile Name="Vip_Btn_2_Up.png" Key="Vip_Btn_2_Up.png" />
+        </PlistImageFolder>
+        <Project Name="Settle.csd" Type="Scene" />
+        <PlistImageFolder Image="Pause.png" PListFile="Pause.plist" Name=".Pause_PList.Dir">
+          <PlistImageFile Name="Pause_Bg_L.png" Key="Pause_Bg_L.png" />
+          <PlistImageFile Name="Pause_Bg_R.png" Key="Pause_Bg_R.png" />
+          <PlistImageFile Name="Pause_Continue_Btn_Down.png" Key="Pause_Continue_Btn_Down.png" />
+          <PlistImageFile Name="Pause_Continue_Btn_Up.png" Key="Pause_Continue_Btn_Up.png" />
+          <PlistImageFile Name="Pause_Giveup_Btn_Down.png" Key="Pause_Giveup_Btn_Down.png" />
+          <PlistImageFile Name="Pause_Giveup_Btn_Up.png" Key="Pause_Giveup_Btn_Up.png" />
+        </PlistImageFolder>
+        <Project Name="Pause.csd" Type="Scene" />
+        <PlistImageFolder Image="Mission.png" PListFile="Mission.plist" Name=".Mission_PList.Dir">
+          <PlistImageFile Name="Lv_Eazy.png" Key="Lv_Eazy.png" />
+          <PlistImageFile Name="Lv_Eazy_Down.png" Key="Lv_Eazy_Down.png" />
+          <PlistImageFile Name="Lv_Eazy_Up.png" Key="Lv_Eazy_Up.png" />
+          <PlistImageFile Name="Lv_Hard.png" Key="Lv_Hard.png" />
+          <PlistImageFile Name="Lv_Hard_Down.png" Key="Lv_Hard_Down.png" />
+          <PlistImageFile Name="Lv_Hard_Up.png" Key="Lv_Hard_Up.png" />
+          <PlistImageFile Name="Lv_Normal.png" Key="Lv_Normal.png" />
+          <PlistImageFile Name="Lv_Normal_Down.png" Key="Lv_Normal_Down.png" />
+          <PlistImageFile Name="Lv_Normal_Up.png" Key="Lv_Normal_Up.png" />
+          <PlistImageFile Name="Stage_Boss_Off_Img.png" Key="Stage_Boss_Off_Img.png" />
+          <PlistImageFile Name="Stage_Boss_On_Img.png" Key="Stage_Boss_On_Img.png" />
+          <PlistImageFile Name="Stage_Line_Off.png" Key="Stage_Line_Off.png" />
+          <PlistImageFile Name="Stage_Line_On.png" Key="Stage_Line_On.png" />
+          <PlistImageFile Name="Stage_Npc_Off_Img.png" Key="Stage_Npc_Off_Img.png" />
+          <PlistImageFile Name="Stage_Npc_On_Img.png" Key="Stage_Npc_On_Img.png" />
+          <PlistImageFile Name="Stage_Off_Img.png" Key="Stage_Off_Img.png" />
+          <PlistImageFile Name="Stage_On_Img.png" Key="Stage_On_Img.png" />
+          <PlistImageFile Name="Stage_Player.png" Key="Stage_Player.png" />
+        </PlistImageFolder>
+        <Project Name="Mission.csd" Type="Scene" />
+        <PlistImageFolder Image="Retry.png" PListFile="Retry.plist" Name=".Retry_PList.Dir">
+          <PlistImageFile Name="Retry_Bg.png" Key="Retry_Bg.png" />
+          <PlistImageFile Name="Retry_Quit_Btn_Down.png" Key="Retry_Quit_Btn_Down.png" />
+          <PlistImageFile Name="Retry_Quit_Btn_Up.png" Key="Retry_Quit_Btn_Up.png" />
+          <PlistImageFile Name="Retry_Sure_Btn_Down.png" Key="Retry_Sure_Btn_Down.png" />
+          <PlistImageFile Name="Retry_Sure_Btn_Up.png" Key="Retry_Sure_Btn_Up.png" />
+        </PlistImageFolder>
+        <PlistImageFolder Image="Bag.png" PListFile="Bag.plist" Name=".Bag_PList.Dir">
+          <PlistImageFile Name="Bag_Bg_Little1.png" Key="Bag_Bg_Little1.png" />
+          <PlistImageFile Name="Bag_Buy_Btn_Down.png" Key="Bag_Buy_Btn_Down.png" />
+          <PlistImageFile Name="Bag_Buy_Btn_Up.png" Key="Bag_Buy_Btn_Up.png" />
+          <PlistImageFile Name="Bag_Equip_Btn_Down.png" Key="Bag_Equip_Btn_Down.png" />
+          <PlistImageFile Name="Bag_Equip_Btn_Up.png" Key="Bag_Equip_Btn_Up.png" />
+          <PlistImageFile Name="Bag_Equip_Txt1.png" Key="Bag_Equip_Txt1.png" />
+          <PlistImageFile Name="Bag_Equip_Txt2.png" Key="Bag_Equip_Txt2.png" />
+          <PlistImageFile Name="Bag_Equip_Txt3.png" Key="Bag_Equip_Txt3.png" />
+          <PlistImageFile Name="Bag_Name1_1.png" Key="Bag_Name1_1.png" />
+          <PlistImageFile Name="Bag_Prog.png" Key="Bag_Prog.png" />
+          <PlistImageFile Name="Bag_Strengthen_Btn_Down.png" Key="Bag_Strengthen_Btn_Down.png" />
+          <PlistImageFile Name="Bag_Strengthen_Btn_Up.png" Key="Bag_Strengthen_Btn_Up.png" />
+          <PlistImageFile Name="Bag_Strengthen_Txt1.png" Key="Bag_Strengthen_Txt1.png" />
+          <PlistImageFile Name="Bag_Strengthen_Txt2.png" Key="Bag_Strengthen_Txt2.png" />
+          <PlistImageFile Name="Bag_Title1_Dark.png" Key="Bag_Title1_Dark.png" />
+          <PlistImageFile Name="Bag_Title1_Light.png" Key="Bag_Title1_Light.png" />
+          <PlistImageFile Name="Bag_Title2_Dark.png" Key="Bag_Title2_Dark.png" />
+          <PlistImageFile Name="Bag_Title2_Light.png" Key="Bag_Title2_Light.png" />
+          <PlistImageFile Name="Bag_Title3_Dark.png" Key="Bag_Title3_Dark.png" />
+          <PlistImageFile Name="Bag_Title3_Light.png" Key="Bag_Title3_Light.png" />
+          <PlistImageFile Name="Bag_Title4_Dark.png" Key="Bag_Title4_Dark.png" />
+          <PlistImageFile Name="Bag_Title4_Light.png" Key="Bag_Title4_Light.png" />
+          <PlistImageFile Name="Close_Btn_Down.png" Key="Close_Btn_Down.png" />
+          <PlistImageFile Name="Close_Btn_Up.png" Key="Close_Btn_Up.png" />
+          <PlistImageFile Name="Bag_Strengthen_Max_Btn.png" Key="Bag_Strengthen_Max_Btn.png" />
+          <PlistImageFile Name="Bag_Strengthen_Txt3.png" Key="Bag_Strengthen_Txt3.png" />
+          <PlistImageFile Name="Bag_Compose_Btn_Down.png" Key="Bag_Compose_Btn_Down.png" />
+          <PlistImageFile Name="Bag_Compose_Btn_Up.png" Key="Bag_Compose_Btn_Up.png" />
+          <PlistImageFile Name="Bag_Upgrade_Btn_Down.png" Key="Bag_Upgrade_Btn_Down.png" />
+          <PlistImageFile Name="Bag_Upgrade_Btn_Up.png" Key="Bag_Upgrade_Btn_Up.png" />
+        </PlistImageFolder>
+        <Project Name="Bag.csd" Type="Scene" />
+        <Project Name="BagListItem.csd" Type="Node" />
+        <PlistImageFolder Image="Loading.png" PListFile="Loading.plist" Name=".Loading_PList.Dir">
+          <PlistImageFile Name="Loading_Bg.png" Key="Loading_Bg.png" />
+          <PlistImageFile Name="Loading_Cover.png" Key="Loading_Cover.png" />
+          <PlistImageFile Name="Loading_Needle.png" Key="Loading_Needle.png" />
+          <PlistImageFile Name="Loading_Prog.png" Key="Loading_Prog.png" />
+        </PlistImageFolder>
+        <Project Name="Loading.csd" Type="Scene" />
+        <PlistImageFolder Image="Start.png" PListFile="Start.plist" Name=".Start_PList.Dir">
+          <PlistImageFile Name="Start_Fire_1.png" Key="Start_Fire_1.png" />
+          <PlistImageFile Name="Start_Fire_2.png" Key="Start_Fire_2.png" />
+          <PlistImageFile Name="Start_Glass.png" Key="Start_Glass.png" />
+          <PlistImageFile Name="Start_Missile.png" Key="Start_Missile.png" />
+          <PlistImageFile Name="Start_Missile_Gass.png" Key="Start_Missile_Gass.png" />
+          <PlistImageFile Name="Start_Plane_1.png" Key="Start_Plane_1.png" />
+          <PlistImageFile Name="Start_Plane_2.png" Key="Start_Plane_2.png" />
+          <PlistImageFile Name="Start_Txt1.png" Key="Start_Txt1.png" />
+          <PlistImageFile Name="Start_Txt2.png" Key="Start_Txt2.png" />
+          <PlistImageFile Name="Start_Txt3.png" Key="Start_Txt3.png" />
+          <PlistImageFile Name="Start_Txt4.png" Key="Start_Txt4.png" />
+          <PlistImageFile Name="Start_Txt5.png" Key="Start_Txt5.png" />
+          <PlistImageFile Name="Start_Txt6.png" Key="Start_Txt6.png" />
+          <PlistImageFile Name="Start_Txt7.png" Key="Start_Txt7.png" />
+        </PlistImageFolder>
+        <Project Name="Start.csd" Type="Scene" />
+        <Folder Name="Txt">
+          <Fnt Name="unlock-plane.fnt" />
+          <Fnt Name="GeneralDialogTitle.fnt" />
+          <Fnt Name="GiftText.fnt" />
+          <Fnt Name="GiftRecommend.fnt" />
+          <Fnt Name="Help.fnt" />
+          <Fnt Name="AircraftTitle.fnt" />
+          <Fnt Name="AircraftDesc.fnt" />
+          <Fnt Name="Rapid_Distance.fnt" />
+          <Image Name="Help.png" />
+          <Fnt Name="VipTimeLeft.fnt" />
+          <Fnt Name="RelifeNum.fnt" />
+        </Folder>
+        <Project Name="GameUI_Dialogbox.csd" Type="Node" />
+        <Project Name="GameUI_Txt.csd" Type="Node" />
+        <PlistImageFolder Image="GameUI_Txt.png" PListFile="GameUI_Txt.plist" Name=".GameUI_Txt_PList.Dir">
+          <PlistImageFile Name="GameUI_Light1.png" Key="GameUI_Light1.png" />
+          <PlistImageFile Name="GameUI_Light2.png" Key="GameUI_Light2.png" />
+          <PlistImageFile Name="GameUI_Light3.png" Key="GameUI_Light3.png" />
+          <PlistImageFile Name="GameUI_Light4.png" Key="GameUI_Light4.png" />
+          <PlistImageFile Name="GameUI_Light5.png" Key="GameUI_Light5.png" />
+          <PlistImageFile Name="GameUI_Txt1.png" Key="GameUI_Txt1.png" />
+          <PlistImageFile Name="GameUI_Txt2.png" Key="GameUI_Txt2.png" />
+          <PlistImageFile Name="GameUI_Txt3.png" Key="GameUI_Txt3.png" />
+          <PlistImageFile Name="GameUI_Txt4.png" Key="GameUI_Txt4.png" />
+          <PlistImageFile Name="GameUI_Txt5.png" Key="GameUI_Txt5.png" />
+          <PlistImageFile Name="GameUI_Txt6.png" Key="GameUI_Txt6.png" />
+          <PlistImageFile Name="GameUI_Txt7.png" Key="GameUI_Txt7.png" />
+        </PlistImageFolder>
+        <Project Name="MainUI_Gift.csd" Type="Node" />
+        <PlistImageFolder Image="MainUI_Gift.png" PListFile="MainUI_Gift.plist" Name=".MainUI_Gift_PList.Dir">
+          <PlistImageFile Name="Com_Gift.png" Key="Com_Gift.png" />
+          <PlistImageFile Name="Com_Gift_Light1.png" Key="Com_Gift_Light1.png" />
+          <PlistImageFile Name="Com_Gift_Light2.png" Key="Com_Gift_Light2.png" />
+          <PlistImageFile Name="Com_Gift_Txt1.png" Key="Com_Gift_Txt1.png" />
+          <PlistImageFile Name="Com_Gift_Txt2.png" Key="Com_Gift_Txt2.png" />
+          <PlistImageFile Name="Com_Gift_Txt3.png" Key="Com_Gift_Txt3.png" />
+          <PlistImageFile Name="Com_Gift_Txt4.png" Key="Com_Gift_Txt4.png" />
+        </PlistImageFolder>
+        <PlistImageFolder Image="UI_Guide_Beauty01.png" PListFile="UI_Guide_Beauty01.plist" Name=".UI_Guide_Beauty01_PList.Dir">
+          <PlistImageFile Name="Guide_Arm_L.png" Key="Guide_Arm_L.png" />
+          <PlistImageFile Name="Guide_Arm_R.png" Key="Guide_Arm_R.png" />
+          <PlistImageFile Name="Guide_Body.png" Key="Guide_Body.png" />
+          <PlistImageFile Name="Guide_Chest.png" Key="Guide_Chest.png" />
+          <PlistImageFile Name="Guide_Eye1.png" Key="Guide_Eye1.png" />
+          <PlistImageFile Name="Guide_Eye2.png" Key="Guide_Eye2.png" />
+          <PlistImageFile Name="Guide_Glasses.png" Key="Guide_Glasses.png" />
+          <PlistImageFile Name="Guide_Hair.png" Key="Guide_Hair.png" />
+          <PlistImageFile Name="Guide_Hand_L.png" Key="Guide_Hand_L.png" />
+          <PlistImageFile Name="Guide_Hand_R.png" Key="Guide_Hand_R.png" />
+          <PlistImageFile Name="Guide_Head.png" Key="Guide_Head.png" />
+          <PlistImageFile Name="Guide_Mouth.png" Key="Guide_Mouth.png" />
+        </PlistImageFolder>
+        <PlistImageFolder Image="Strengthen.png" PListFile="Strengthen.plist" Name=".Strengthen_PList.Dir">
+          <PlistImageFile Name="Strengthen_Bg1.png" Key="Strengthen_Bg1.png" />
+          <PlistImageFile Name="Strengthen_Bg1_Up.png" Key="Strengthen_Bg1_Up.png" />
+          <PlistImageFile Name="Strengthen_Bg2 _Up.png" Key="Strengthen_Bg2 _Up.png" />
+          <PlistImageFile Name="Strengthen_Bg2.png" Key="Strengthen_Bg2.png" />
+          <PlistImageFile Name="Strengthen_Bg3.png" Key="Strengthen_Bg3.png" />
+          <PlistImageFile Name="Strengthen_Bg3_Up.png" Key="Strengthen_Bg3_Up.png" />
+          <PlistImageFile Name="Strengthen_Bg4.png" Key="Strengthen_Bg4.png" />
+          <PlistImageFile Name="Strengthen_Bg4_Up.png" Key="Strengthen_Bg4_Up.png" />
+          <PlistImageFile Name="Strengthen_Bg5.png" Key="Strengthen_Bg5.png" />
+          <PlistImageFile Name="Strengthen_Bg5_Up.png" Key="Strengthen_Bg5_Up.png" />
+          <PlistImageFile Name="Strengthen_Btn1_Down.png" Key="Strengthen_Btn1_Down.png" />
+          <PlistImageFile Name="Strengthen_Btn1_Up.png" Key="Strengthen_Btn1_Up.png" />
+          <PlistImageFile Name="Strengthen_Prog.png" Key="Strengthen_Prog.png" />
+          <PlistImageFile Name="Strengthen_Prog_Bg.png" Key="Strengthen_Prog_Bg.png" />
+          <PlistImageFile Name="Strengthen_Title.png" Key="Strengthen_Title.png" />
+        </PlistImageFolder>
+        <Project Name="Strengthen.csd" Type="Scene" />
+        <Project Name="BeautyGuide.csd" Type="Scene" />
+        <Project Name="Dialog.csd" Type="Scene" />
+        <PlistImageFolder Image="Common.png" PListFile="Common.plist" Name=".Common_PList.Dir">
+          <PlistImageFile Name="Back_Btn_Down.png" Key="Back_Btn_Down.png" />
+          <PlistImageFile Name="Back_Btn_Up.png" Key="Back_Btn_Up.png" />
+          <PlistImageFile Name="Black_Bg.png" Key="Black_Bg.png" />
+          <PlistImageFile Name="Box_Bg_Off.png" Key="Box_Bg_Off.png" />
+          <PlistImageFile Name="Box_Bg_On.png" Key="Box_Bg_On.png" />
+          <PlistImageFile Name="Buyplane_Bg.png" Key="Buyplane_Bg.png" />
+          <PlistImageFile Name="Buyplane_Box_Img.png" Key="Buyplane_Box_Img.png" />
+          <PlistImageFile Name="Close_Btn_Down.png" Key="Close_Btn_Down.png" />
+          <PlistImageFile Name="Close_Btn_Up.png" Key="Close_Btn_Up.png" />
+          <PlistImageFile Name="Com_Bag_Btn_Down.png" Key="Com_Bag_Btn_Down.png" />
+          <PlistImageFile Name="Com_Bag_Btn_Up.png" Key="Com_Bag_Btn_Up.png" />
+          <PlistImageFile Name="Com_Btn_Bg1.png" Key="Com_Btn_Bg1.png" />
+          <PlistImageFile Name="Continue_Btn_Down.png" Key="Continue_Btn_Down.png" />
+          <PlistImageFile Name="Continue_Btn_Up.png" Key="Continue_Btn_Up.png" />
+          <PlistImageFile Name="Daily_Prop_Diamond.png" Key="Daily_Prop_Diamond.png" />
+          <PlistImageFile Name="Daily_Prop_Gift.png" Key="Daily_Prop_Gift.png" />
+          <PlistImageFile Name="GameUI_Dialogbox_Bg.png" Key="GameUI_Dialogbox_Bg.png" />
+          <PlistImageFile Name="Logo.png" Key="Logo.png" />
+          <PlistImageFile Name="MainUI_Diamond_Img.png" Key="MainUI_Diamond_Img.png" />
+          <PlistImageFile Name="MainUI_Score_Img.png" Key="MainUI_Score_Img.png" />
+          <PlistImageFile Name="MainUI_Screen.png" Key="MainUI_Screen.png" />
+          <PlistImageFile Name="Reward_Back_Bg.png" Key="Reward_Back_Bg.png" />
+          <PlistImageFile Name="Shop_Buy_Btn_Down.png" Key="Shop_Buy_Btn_Down.png" />
+          <PlistImageFile Name="Shop_Buy_Btn_Up.png" Key="Shop_Buy_Btn_Up.png" />
+          <PlistImageFile Name="Shop_Rmb_Img.png" Key="Shop_Rmb_Img.png" />
+          <PlistImageFile Name="Stage_Star_Dark.png" Key="Stage_Star_Dark.png" />
+          <PlistImageFile Name="Stage_Star_Light.png" Key="Stage_Star_Light.png" />
+          <PlistImageFile Name="activity1.png" Key="activity1.png" />
+          <PlistImageFile Name="activity2.png" Key="activity2.png" />
+          <PlistImageFile Name="buy-fail.png" Key="buy-fail.png" />
+          <PlistImageFile Name="buy-success.png" Key="buy-success.png" />
+          <PlistImageFile Name="Strengthen_Btn2_Down.png" Key="Strengthen_Btn2_Down.png" />
+          <PlistImageFile Name="Strengthen_Btn2_Up.png" Key="Strengthen_Btn2_Up.png" />
+          <PlistImageFile Name="Avatar_01.png" Key="Avatar_01.png" />
+          <PlistImageFile Name="Avatar_02.png" Key="Avatar_02.png" />
+          <PlistImageFile Name="General_Bg.png" Key="General_Bg.png" />
+          <PlistImageFile Name="Quit_Btn_Down.png" Key="Quit_Btn_Down.png" />
+          <PlistImageFile Name="Quit_Btn_Up.png" Key="Quit_Btn_Up.png" />
+          <PlistImageFile Name="Sure_Btn_Down.png" Key="Sure_Btn_Down.png" />
+          <PlistImageFile Name="Sure_Btn_Up.png" Key="Sure_Btn_Up.png" />
+          <PlistImageFile Name="Cancel_Sure_Btn_Down.png" Key="Cancel_Sure_Btn_Down.png" />
+          <PlistImageFile Name="Cancel_Sure_Btn_Up.png" Key="Cancel_Sure_Btn_Up.png" />
+          <PlistImageFile Name="Guide_Arrow.png" Key="Guide_Arrow.png" />
+          <PlistImageFile Name="Avatar_03.png" Key="Avatar_03.png" />
+          <PlistImageFile Name="light.png" Key="light.png" />
+          <PlistImageFile Name="MainUI_VIP_Img.png" Key="MainUI_VIP_Img.png" />
+          <PlistImageFile Name="MainUI_VIP_Img_Disable.png" Key="MainUI_VIP_Img_Disable.png" />
+        </PlistImageFolder>
+        <Project Name="RewardItem.csd" Type="Node" />
+        <Project Name="GeneralDialog.csd" Type="Node" />
+        <Project Name="GiftDiamond.csd" Type="Node" />
+        <PlistImageFolder Image="Gift.png" PListFile="Gift.plist" Name=".Gift_PList.Dir">
+          <PlistImageFile Name="Gift_Bg.png" Key="Gift_Bg.png" />
+          <PlistImageFile Name="Gift_Buy_Btn_Down.png" Key="Gift_Buy_Btn_Down.png" />
+          <PlistImageFile Name="Gift_Buy_Btn_Up.png" Key="Gift_Buy_Btn_Up.png" />
+          <PlistImageFile Name="Gift_Bg_L.png" Key="Gift_Bg_L.png" />
+          <PlistImageFile Name="Gift_Prop_Diamond_Img.png" Key="Gift_Prop_Diamond_Img.png" />
+          <PlistImageFile Name="Gift_Prop_Life_Img.png" Key="Gift_Prop_Life_Img.png" />
+          <PlistImageFile Name="Gift_Prop_Shield_Img.png" Key="Gift_Prop_Shield_Img.png" />
+          <PlistImageFile Name="Gift_Prop_Wingman_Img.png" Key="Gift_Prop_Wingman_Img.png" />
+          <PlistImageFile Name="Gift_Title_Aircraft.png" Key="Gift_Title_Aircraft.png" />
+          <PlistImageFile Name="Gift_Title_Aircraft_Pkg.png" Key="Gift_Title_Aircraft_Pkg.png" />
+          <PlistImageFile Name="Gift_Title_Big_Gift.png" Key="Gift_Title_Big_Gift.png" />
+          <PlistImageFile Name="Gift_Title_Gift.png" Key="Gift_Title_Gift.png" />
+          <PlistImageFile Name="Gift_Title_Mid_Gift.png" Key="Gift_Title_Mid_Gift.png" />
+          <PlistImageFile Name="Gift_Title_New_Gift.png" Key="Gift_Title_New_Gift.png" />
+          <PlistImageFile Name="Gift_Title_Revive.png" Key="Gift_Title_Revive.png" />
+          <PlistImageFile Name="Gift_Buy_Btn_Disable.png" Key="Gift_Buy_Btn_Disable.png" />
+          <PlistImageFile Name="Gift_Title_Hug_Gift.png" Key="Gift_Title_Hug_Gift.png" />
+          <PlistImageFile Name="Gift_Bg_Duo.png" Key="Gift_Bg_Duo.png" />
+          <PlistImageFile Name="Gift_Title_Duo.png" Key="Gift_Title_Duo.png" />
+          <PlistImageFile Name="Gift_Bg_Duo_2.png" Key="Gift_Bg_Duo_2.png" />
+          <PlistImageFile Name="Buy2_Btn_Down.png" Key="Buy2_Btn_Down.png" />
+          <PlistImageFile Name="Buy2_Btn_Up.png" Key="Buy2_Btn_Up.png" />
+          <PlistImageFile Name="Gift_Title_Vip.png" Key="Gift_Title_Vip.png" />
+          <PlistImageFile Name="VIP_Prop_Img1.png" Key="VIP_Prop_Img1.png" />
+          <PlistImageFile Name="VIP_Prop_Img2.png" Key="VIP_Prop_Img2.png" />
+          <PlistImageFile Name="VIP_Prop_Img3.png" Key="VIP_Prop_Img3.png" />
+          <PlistImageFile Name="VIP_Prop_Img4.png" Key="VIP_Prop_Img4.png" />
+          <PlistImageFile Name="Vip_Content_1.png" Key="Vip_Content_1.png" />
+          <PlistImageFile Name="Vip_Content_2.png" Key="Vip_Content_2.png" />
+          <PlistImageFile Name="Vip_Content_3.png" Key="Vip_Content_3.png" />
+          <PlistImageFile Name="Vip_Content_4.png" Key="Vip_Content_4.png" />
+          <PlistImageFile Name="Vip_Content_5.png" Key="Vip_Content_5.png" />
+          <PlistImageFile Name="Vip_Logo.png" Key="Vip_Logo.png" />
+          <PlistImageFile Name="Vip_Logo_Disable.png" Key="Vip_Logo_Disable.png" />
+          <PlistImageFile Name="Vip_Logo_Txt.png" Key="Vip_Logo_Txt.png" />
+          <PlistImageFile Name="Vip_Logo_Txt_2.png" Key="Vip_Logo_Txt_2.png" />
+          <PlistImageFile Name="Buy2_Btn_Disable.png" Key="Buy2_Btn_Disable.png" />
+          <PlistImageFile Name="Vip_Logo_Txt_3.png" Key="Vip_Logo_Txt_3.png" />
+          <PlistImageFile Name="Relife_Bg.png" Key="Relife_Bg.png" />
+          <PlistImageFile Name="Relife_Btn_Down.png" Key="Relife_Btn_Down.png" />
+          <PlistImageFile Name="Relife_Btn_Up.png" Key="Relife_Btn_Up.png" />
+          <PlistImageFile Name="Vip_Relife_Btn_Down.png" Key="Vip_Relife_Btn_Down.png" />
+          <PlistImageFile Name="Vip_Relife_Btn_Up.png" Key="Vip_Relife_Btn_Up.png" />
+          <PlistImageFile Name="Redline.png" Key="Redline.png" />
+          <PlistImageFile Name="Txt_PriceNow.png" Key="Txt_PriceNow.png" />
+          <PlistImageFile Name="Txt_PriceOrig.png" Key="Txt_PriceOrig.png" />
+          <PlistImageFile Name="Txt_Yuan.png" Key="Txt_Yuan.png" />
+        </PlistImageFolder>
+        <Project Name="GiftShield.csd" Type="Node" />
+        <Project Name="GiftKiller.csd" Type="Node" />
+        <Project Name="GiftLifePkg.csd" Type="Node" />
+        <Project Name="GiftLife.csd" Type="Node" />
+        <Project Name="GiftNewPkg.csd" Type="Node" />
+        <Project Name="GiftMidPkg.csd" Type="Node" />
+        <Project Name="GiftBigPkg.csd" Type="Node" />
+        <Project Name="GiftAircraftPkg5.csd" Type="Node" />
+        <PlistImageFolder Image="ItemProp.png" PListFile="ItemProp.plist" Name=".ItemProp_PList.Dir">
+          <PlistImageFile Name="Item_Armor01.png" Key="Item_Armor01.png" />
+          <PlistImageFile Name="Item_Armor02.png" Key="Item_Armor02.png" />
+          <PlistImageFile Name="Item_Armor03.png" Key="Item_Armor03.png" />
+          <PlistImageFile Name="Item_Armor04.png" Key="Item_Armor04.png" />
+          <PlistImageFile Name="Item_Armor05.png" Key="Item_Armor05.png" />
+          <PlistImageFile Name="Item_Armor06.png" Key="Item_Armor06.png" />
+          <PlistImageFile Name="Item_Plane01.png" Key="Item_Plane01.png" />
+          <PlistImageFile Name="Item_Plane02.png" Key="Item_Plane02.png" />
+          <PlistImageFile Name="Item_Plane03.png" Key="Item_Plane03.png" />
+          <PlistImageFile Name="Item_Plane04.png" Key="Item_Plane04.png" />
+          <PlistImageFile Name="Item_Plane05.png" Key="Item_Plane05.png" />
+          <PlistImageFile Name="Item_Plane06.png" Key="Item_Plane06.png" />
+          <PlistImageFile Name="Item_Secondary01.png" Key="Item_Secondary01.png" />
+          <PlistImageFile Name="Item_Secondary02.png" Key="Item_Secondary02.png" />
+          <PlistImageFile Name="Item_Secondary03.png" Key="Item_Secondary03.png" />
+          <PlistImageFile Name="Item_Secondary04.png" Key="Item_Secondary04.png" />
+          <PlistImageFile Name="Item_Secondary05.png" Key="Item_Secondary05.png" />
+          <PlistImageFile Name="Item_Secondary06.png" Key="Item_Secondary06.png" />
+          <PlistImageFile Name="Item_Wingman01.png" Key="Item_Wingman01.png" />
+          <PlistImageFile Name="Item_Wingman02.png" Key="Item_Wingman02.png" />
+          <PlistImageFile Name="Item_Wingman03.png" Key="Item_Wingman03.png" />
+          <PlistImageFile Name="Item_Wingman04.png" Key="Item_Wingman04.png" />
+          <PlistImageFile Name="Item_Wingman05.png" Key="Item_Wingman05.png" />
+          <PlistImageFile Name="Item_Wingman06.png" Key="Item_Wingman06.png" />
+          <PlistImageFile Name="Item_Piece.png" Key="Item_Piece.png" />
+          <PlistImageFile Name="Item_Plane07.png" Key="Item_Plane07.png" />
+        </PlistImageFolder>
+        <Project Name="GiftAircraftPkg6.csd" Type="Node" />
+        <Project Name="GiftAircraft4.csd" Type="Node" />
+        <Project Name="GiftAircraft5.csd" Type="Node" />
+        <Project Name="GiftAircraft6.csd" Type="Node" />
+        <Project Name="GiftHugPkg.csd" Type="Node" />
+        <Project Name="GiftHugBigPkg.csd" Type="Node" />
+        <Project Name="GiftLifeDuo.csd" Type="Node" />
+        <Project Name="GeneralDialogOneBtn.csd" Type="Node" />
+        <Project Name="SettleRapid.csd" Type="Scene" />
+        <Project Name="Vip.csd" Type="Node" />
+        <Project Name="GiftVip.csd" Type="Node" />
+        <Project Name="PieceGot.csd" Type="Node" />
+        <Project Name="Relife.csd" Type="Node" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

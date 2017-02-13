@@ -1,0 +1,763 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Aircraft">
+      <UniqueIdentifier>{22128061-313e-4b10-947c-f382db34e638}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Bullet">
+      <UniqueIdentifier>{22756738-414c-4e2b-940a-3b98902e7351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Layer">
+      <UniqueIdentifier>{0f079822-4d6e-49f5-8986-2f969ecdf6a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Common">
+      <UniqueIdentifier>{667a710a-6cf6-4175-9c17-8752fd2bc0c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Sprite">
+      <UniqueIdentifier>{807b3a90-e519-4238-a699-fa19125c36cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Billing">
+      <UniqueIdentifier>{0df36186-6af8-40f7-ab7b-3db2cc6a5b05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Menu">
+      <UniqueIdentifier>{8809b761-a5e9-4f8f-b37c-47e5207f7a9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Bmob">
+      <UniqueIdentifier>{628397c2-f3fc-43e3-8b18-5983f04b7d22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Bmob\baseobject">
+      <UniqueIdentifier>{6f0e9af6-9542-4c9a-b797-ec8b982b5485}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Bmob\delegate">
+      <UniqueIdentifier>{b1fdd48e-d27c-4416-a622-c95ca66eb13e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Bmob\jsoncpp">
+      <UniqueIdentifier>{6cb559d3-c5c7-4cc6-8f30-261adb585c5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Bmob\util">
+      <UniqueIdentifier>{1db4db9b-20ef-4f5a-acde-b4a25e93b043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Bmob\jsoncpp\include">
+      <UniqueIdentifier>{693e812a-35a1-4e90-9d62-20f041ac5d2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Bmob\jsoncpp\src">
+      <UniqueIdentifier>{af4561a3-accd-4fcb-8d12-aef858bb688e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Mode">
+      <UniqueIdentifier>{d6461267-aaa5-4ec6-af5a-ab4b5e9ce943}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bullet.cpp">
+      <Filter>src\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DebugLayer.cpp">
+      <Filter>src\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Enemy.cpp">
+      <Filter>src\Aircraft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameLayer.cpp">
+      <Filter>src\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GlobalData.cpp">
+      <Filter>src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LoadingLayer.cpp">
+      <Filter>src\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PlaneLayer.cpp">
+      <Filter>src\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Common\HpBar.cpp">
+      <Filter>src\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Common\ScrolledBackground.cpp">
+      <Filter>src\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameObject.cpp">
+      <Filter>src\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Player.cpp">
+      <Filter>src\Aircraft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Wingman.cpp">
+      <Filter>src\Aircraft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Aircraft.cpp">
+      <Filter>src\Aircraft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Reward.cpp">
+      <Filter>src\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HubLayer.cpp">
+      <Filter>src\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PauseLayer.cpp">
+      <Filter>src\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameData.cpp">
+      <Filter>src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Missile.cpp">
+      <Filter>src\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Common\DbHelper.cpp">
+      <Filter>src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Common\sqlite3.c">
+      <Filter>src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GiftLayer.cpp">
+      <Filter>src\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Sound.cpp">
+      <Filter>src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Boss.cpp">
+      <Filter>src\Aircraft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PopupLayer.cpp">
+      <Filter>src\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Blast.cpp">
+      <Filter>src\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Common\Shake.cpp">
+      <Filter>src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CustomBullet.cpp">
+      <Filter>src\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CountDown.cpp">
+      <Filter>src\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Achievement.cpp">
+      <Filter>src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameScene.cpp">
+      <Filter>src\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Killer.cpp">
+      <Filter>src\Aircraft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Setting.cpp">
+      <Filter>src\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Analytics.cpp">
+      <Filter>src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Goods.cpp">
+      <Filter>src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BillingInterface.cpp">
+      <Filter>src\Billing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UniBilling.cpp">
+      <Filter>src\Billing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Carrier.cpp">
+      <Filter>src\Billing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Channel.cpp">
+      <Filter>src\Billing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Common\Utils.cpp">
+      <Filter>src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BackgroundLayer.cpp">
+      <Filter>src\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SeniorEnemy.cpp">
+      <Filter>src\Aircraft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MenuMainUI.cpp">
+      <Filter>src\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MenuMission.cpp">
+      <Filter>src\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Preload.cpp">
+      <Filter>src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MenuBag.cpp">
+      <Filter>src\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MenuStrengthen.cpp">
+      <Filter>src\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MenuSettle.cpp">
+      <Filter>src\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MenuDayGift.cpp">
+      <Filter>src\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Laser.cpp">
+      <Filter>src\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Equipment.cpp">
+      <Filter>src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\baseobject\bmobobject.cpp">
+      <Filter>src\Bmob\baseobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\baseobject\bmobquery.cpp">
+      <Filter>src\Bmob\baseobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\baseobject\bmobqueryinterface.cpp">
+      <Filter>src\Bmob\baseobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\baseobject\bmobSDKinit.cpp">
+      <Filter>src\Bmob\baseobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\baseobject\bmobuser.cpp">
+      <Filter>src\Bmob\baseobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\delegate\bmobcountdelegate.cpp">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\delegate\bmobdelegate.cpp">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\delegate\bmobdeletedelegate.cpp">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\delegate\bmobemailverifydelegate.cpp">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\delegate\bmobfinddelegate.cpp">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\delegate\bmobgetdelegate.cpp">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\delegate\bmoblogindelegate.cpp">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\delegate\bmobrequestSMScodedelegate.cpp">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\delegate\bmobresetpasswordbycodedelegate.cpp">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\delegate\bmobresetpassworddelegate.cpp">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\delegate\bmobsavedelegate.cpp">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\delegate\bmobstaticsdelegate.cpp">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\delegate\bmobupdatedelegate.cpp">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\util\bmobjsonutil.cpp">
+      <Filter>src\Bmob\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\util\bmobstrutil.cpp">
+      <Filter>src\Bmob\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\jsoncpp\src\json_reader.cpp">
+      <Filter>src\Bmob\jsoncpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\jsoncpp\src\json_value.cpp">
+      <Filter>src\Bmob\jsoncpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\jsoncpp\src\json_writer.cpp">
+      <Filter>src\Bmob\jsoncpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\ExchangeCode.cpp">
+      <Filter>src\Bmob</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\Gift.cpp">
+      <Filter>src\Bmob</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\DmlCallback.cpp">
+      <Filter>src\Bmob</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\ExchangeGift.cpp">
+      <Filter>src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SuperLaser.cpp">
+      <Filter>src\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MenuReward.cpp">
+      <Filter>src\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BaseLayer.cpp">
+      <Filter>src\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StartLayer.cpp">
+      <Filter>src\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MenuShop.cpp">
+      <Filter>src\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Dialog.cpp">
+      <Filter>src\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ModeEndless.cpp">
+      <Filter>src\Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ModeLevel.cpp">
+      <Filter>src\Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ModeRapid.cpp">
+      <Filter>src\Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ModeBase.cpp">
+      <Filter>src\Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ScatterBullet.cpp">
+      <Filter>src\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AircraftPool.cpp">
+      <Filter>src\Aircraft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PromptLayer.cpp">
+      <Filter>src\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FakeLoadingLayer.cpp">
+      <Filter>src\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GeneralDialog.cpp">
+      <Filter>src\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GiftDuoLayer.cpp">
+      <Filter>src\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\baseobject\bmobcloud.cpp">
+      <Filter>src\Bmob\baseobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\delegate\bmobclouddelegate.cpp">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bmob\BmobUtils.cpp">
+      <Filter>src\Bmob</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Guide.cpp">
+      <Filter>src\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GuideImpl.cpp">
+      <Filter>src\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MenuSettleRapid.cpp">
+      <Filter>src\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GiftVip.cpp">
+      <Filter>src\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AimPool.cpp">
+      <Filter>src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Relife.cpp">
+      <Filter>src\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Common\SpriteWithHue.cpp">
+      <Filter>src\Sprite</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bullet.h">
+      <Filter>src\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DebugLayer.h">
+      <Filter>src\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Enemy.h">
+      <Filter>src\Aircraft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameLayer.h">
+      <Filter>src\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GlobalData.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LoadingLayer.h">
+      <Filter>src\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PlaneLayer.h">
+      <Filter>src\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common\HpBar.h">
+      <Filter>src\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common\ScrolledBackground.h">
+      <Filter>src\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameObject.h">
+      <Filter>src\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Track.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Level.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Player.h">
+      <Filter>src\Aircraft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Wingman.h">
+      <Filter>src\Aircraft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Aircraft.h">
+      <Filter>src\Aircraft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Reward.h">
+      <Filter>src\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HubLayer.h">
+      <Filter>src\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IListener.h">
+      <Filter>src\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PauseLayer.h">
+      <Filter>src\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameData.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Missile.h">
+      <Filter>src\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common\DbHelper.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common\sqlite3.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common\sqlite3ext.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GiftLayer.h">
+      <Filter>src\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Sound.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Boss.h">
+      <Filter>src\Aircraft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Armature.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PopupLayer.h">
+      <Filter>src\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Blast.h">
+      <Filter>src\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common\Shake.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CustomBullet.h">
+      <Filter>src\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Achievement.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CountDown.h">
+      <Filter>src\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameScene.h">
+      <Filter>src\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Reinforce.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Killer.h">
+      <Filter>src\Aircraft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Setting.h">
+      <Filter>src\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Analytics.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Goods.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Com.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BillingInterface.h">
+      <Filter>src\Billing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UniBilling.h">
+      <Filter>src\Billing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Carrier.h">
+      <Filter>src\Billing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Channel.h">
+      <Filter>src\Billing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common\Utils.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common\Macro.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BackgroundLayer.h">
+      <Filter>src\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SeniorEnemy.h">
+      <Filter>src\Aircraft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DayGift.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MenuMainUI.h">
+      <Filter>src\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MenuMission.h">
+      <Filter>src\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Preload.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Difficulty.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MenuBag.h">
+      <Filter>src\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Equipment.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MenuStrengthen.h">
+      <Filter>src\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MenuSettle.h">
+      <Filter>src\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MenuDayGift.h">
+      <Filter>src\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Laser.h">
+      <Filter>src\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\baseobject\bmobobject.h">
+      <Filter>src\Bmob\baseobject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\baseobject\bmobquery.h">
+      <Filter>src\Bmob\baseobject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\baseobject\bmobqueryinterface.h">
+      <Filter>src\Bmob\baseobject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\baseobject\bmobSDKinit.h">
+      <Filter>src\Bmob\baseobject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\baseobject\bmobuser.h">
+      <Filter>src\Bmob\baseobject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\delegate\bmobcountdelegate.h">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\delegate\bmobdelegate.h">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\delegate\bmobdeletedelegate.h">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\delegate\bmobemailverifydelegate.h">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\delegate\bmobfinddelegate.h">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\delegate\bmobgetdelegate.h">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\delegate\bmoblogindelegate.h">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\delegate\bmobrequestSMScodedelegate.h">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\delegate\bmobresetpasswordbycodedelegate.h">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\delegate\bmobresetpassworddelegate.h">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\delegate\bmobsavedelegate.h">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\delegate\bmobstaticsdelegate.h">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\delegate\bmobupdatedelegate.h">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\util\bmobjsonutil.h">
+      <Filter>src\Bmob\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\util\bmobstrutil.h">
+      <Filter>src\Bmob\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\jsoncpp\include\autolink.h">
+      <Filter>src\Bmob\jsoncpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\jsoncpp\include\config.h">
+      <Filter>src\Bmob\jsoncpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\jsoncpp\include\features.h">
+      <Filter>src\Bmob\jsoncpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\jsoncpp\include\forwards.h">
+      <Filter>src\Bmob\jsoncpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\jsoncpp\include\json.h">
+      <Filter>src\Bmob\jsoncpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\jsoncpp\include\reader.h">
+      <Filter>src\Bmob\jsoncpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\jsoncpp\include\value.h">
+      <Filter>src\Bmob\jsoncpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\jsoncpp\include\writer.h">
+      <Filter>src\Bmob\jsoncpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\jsoncpp\src\json_batchallocator.h">
+      <Filter>src\Bmob\jsoncpp\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\BmobSdk.h">
+      <Filter>src\Bmob</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\ExchangeCode.h">
+      <Filter>src\Bmob</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\Gift.h">
+      <Filter>src\Bmob</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\DmlCallback.h">
+      <Filter>src\Bmob</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\ExchangeGift.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SuperLaser.h">
+      <Filter>src\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MenuReward.h">
+      <Filter>src\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BaseLayer.h">
+      <Filter>src\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StartLayer.h">
+      <Filter>src\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MenuShop.h">
+      <Filter>src\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Dialog.h">
+      <Filter>src\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ModeEndless.h">
+      <Filter>src\Mode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ModeLevel.h">
+      <Filter>src\Mode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ModeRapid.h">
+      <Filter>src\Mode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ModeBase.h">
+      <Filter>src\Mode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ScatterBullet.h">
+      <Filter>src\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AircraftPool.h">
+      <Filter>src\Aircraft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PromptLayer.h">
+      <Filter>src\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FakeLoadingLayer.h">
+      <Filter>src\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GeneralDialog.h">
+      <Filter>src\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GiftDuoLayer.h">
+      <Filter>src\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\baseobject\bmobcloud.h">
+      <Filter>src\Bmob\baseobject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\delegate\bmobclouddelegate.h">
+      <Filter>src\Bmob\delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bmob\BmobUtils.h">
+      <Filter>src\Bmob</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Guide.h">
+      <Filter>src\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GuideImpl.h">
+      <Filter>src\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MenuSettleRapid.h">
+      <Filter>src\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GiftVip.h">
+      <Filter>src\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Singleton.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AimPool.h">
+      <Filter>src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Relife.h">
+      <Filter>src\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common\SpriteWithHue.h">
+      <Filter>src\Sprite</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Classes\Bmob\jsoncpp\src\json_internalarray.inl">
+      <Filter>src\Bmob\jsoncpp\src</Filter>
+    </None>
+    <None Include="..\Classes\Bmob\jsoncpp\src\json_internalmap.inl">
+      <Filter>src\Bmob\jsoncpp\src</Filter>
+    </None>
+    <None Include="..\Classes\Bmob\jsoncpp\src\json_valueiterator.inl">
+      <Filter>src\Bmob\jsoncpp\src</Filter>
+    </None>
+  </ItemGroup>
+</Project>

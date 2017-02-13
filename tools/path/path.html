@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>路径编辑器</title>
+    <style type="text/css">
+        canvas{margin: 0px; }
+        div{ float:left}
+    </style>
+</head>
+
+<body onload="draw()" style="padding:0px;margin:0px">
+
+<div>
+    <canvas id="canvas" width=330 height=540 style="border: 1px solid #ccc;" oncontextmenu='return false'></canvas>
+</div>
+
+<div style="margin-left:10px">
+    <div id="coords" style="width:200px;height:40px;"></div><br/>
+    <div>
+        <!--
+        <button id="btn_result" type="button" onclick="result();">生成结果</button><br/>
+        -->
+        <button id="btn_line" type="button" onclick="startAddLine();">增加直线</button><br/>
+        <button id="btn_bessel" type="button" onclick="startAddBessel();">增加曲线</button><br/><br/>
+        <button id="btn_modify_ptn_start" type="button" onclick="startModifyPoint();">修改点坐标</button><br/><br/>
+        <!--
+        <button id="btn_modify_ptn_end" type="button" onclick="finishModifyPoint();">修改点坐标结束</button><br/>
+        -->
+        <button id="btn_delete" type="button" onclick="deleteLast();">删除最近一条线</button><br/>
+    </div>
+</div>
+
+<div id="result" style="display:none;width:240px;height:540px;border:1px solid #000;margin-left:10px;word-wrap:break-word;">结果</div>
+<textarea id="data" style="width:500px;height:540px;margin-left:10px">数据</textarea>
+
+        <script>
+
+        var array = [
+            {"type":"screen"},
+            //{"type":"line",p1:{x:240, y:800}, p2:{x:240, y:400}},
+            //{"type":"bessel", p1:{x:240, y:400},p2:{x:0, y:0}, p4:{x:140, y:40}, p3:{x:234, y:278}},
+        ];
+        
+        var W = 540; //width
+        var H = 960; //height
+        var E = 30;  //edge
+
+        var context;
+
+        function convertToSceen(a) {
+            var arr = a.slice(0);
+            if(arr[0].type == "world") {
+                arr[0].type = "screen";
+
+            }else {
+                return arr;
+            }
+
+            for(var i=0;i<arr.length;i++){
+                var path = arr[i];
+                if(path.p1 != undefined) {
+                    path.p1.x = path.p1.x/2;
+                    path.p1.y = (H/2 - path.p1.y/2);
+                }
+                if(path.p2 != undefined) {
+                    path.p2.x = path.p2.x/2;
+                    path.p2.y = (H/2 - path.p2.y/2);
+                }
+                if(path.p3 != undefined) {
+                    path.p3.x = path.p3.x/2;
+                    path.p3.y = (H/2 - path.p3.y/2);
+                }
+                if(path.p4 != undefined) {
+                    path.p4.x = path.p4.x/2;
+                    path.p4.y = (H/2 - path.p4.y/2);
+                }
+            }
+
+            return array;
+        }
+
+        function convertToWorld(a) {
+            var arr = a.slice(0);
+            var output = [];
+
+            for(var i=0;i<arr.length;i++){
+                var path = clone(arr[i]);
+
+                if(path.p1 != undefined) {
+                    path.p1.x = (path.p1.x-E)*2;
+                    path.p1.y = (H/2 + E*2 - path.p1.y-E)*2;
+                }
+                if(path.p2 != undefined) {
+                    path.p2.x = (path.p2.x-E)*2;
+                    path.p2.y = (H/2 + E*2 - path.p2.y-E)*2;
+                }
+                if(path.p3 != undefined) {
+                    path.p3.x = (path.p3.x-E)*2;
+                    path.p3.y = (H/2 + E*2 - path.p3.y-E)*2;
+                }
+                if(path.p4 != undefined) {
+                    path.p4.x = (path.p4.x-E)*2;
+                    path.p4.y = (H/2 + E*2 - path.p4.y-E)*2;
+                }
+
+                output.push(path);
+            }
+
+            return output;
+        }
+
+        function clone(obj){
+            function Clone(){}
+            Clone.prototype = obj;
+            var o = new Clone();
+            for(var a in o){
+                if(typeof o[a] == "object") {
+                    o[a] = clone(o[a]);
+                }
+            }
+            return o;
+        }
+
+        function draw() {
+            var canvas=document.getElementById('canvas');
+            context=canvas.getContext('2d');
+
+            context.clearRect(0,0,W/2+E*2,H/2+E*2);
+            
+            //方框
+            context.beginPath();
+            context.moveTo(E, E);
+            context.lineTo(E, H/2+E);
+            context.moveTo(E, H/2+E);
+            context.lineTo(W/2+E, H/2+E);
+            context.moveTo(W/2+E, H/2+E);
+            context.lineTo(W/2+E, E);
+            context.moveTo(W/2+E, E);
+            context.lineTo(E, E);
+            context.strokeStyle = "yellow";
+            context.stroke();
+            
+            //竖线
+            context.beginPath();                
+            for(var i = 1; i < 4; i++){
+                context.moveTo(E + W/2/4 * i, E);
+                context.lineTo(E + W/2/4 * i, H/2+E);
+            }
+            context.strokeStyle = "yellow";
+            context.stroke();
+            
+            //横线
+            context.beginPath();
+            
+            context.moveTo(E,  E + 25);
+            context.lineTo(E+W/2, E + 25);
+
+            for(var i = 1; i < 4; i++){
+                context.moveTo(E,  E + H/2/4 * i);
+                context.lineTo(E+W/2, E + H/2/4 * i);
+            }
+            context.strokeStyle = "yellow";
+            context.stroke();
+            
+            //
+            drawCircleYellow(E+30,     E+H/2-30, 20);
+            drawCircleYellow(E+W/2-30, E+H/2-30, 20);
+
+
+            //array = convertToSceen(array);
+            if(array.length == 1 && orign.x > -100 && orign.y > -100){
+                drawCircleRed(orign.x, orign.y);
+                return;
+            }
+
+            for(var i=0;i<array.length;i++){
+                var path = array[i];
+
+
+                if(path.type == "line") {
+                    context.beginPath();
+                    context.moveTo(path.p1.x, path.p1.y);
+                    context.lineTo(path.p2.x, path.p2.y);
+                    context.strokeStyle = "red";
+                    context.stroke();
+
+                    if(i == 1 || i == 0){
+                        drawCircleRed(path.p1.x, path.p1.y);
+                    }else{
+                        drawCircle(path.p1.x, path.p1.y);
+                    }
+                    drawCircle(path.p2.x, path.p2.y);
+
+
+                }else if(path.type == "bessel"){
+                    context.beginPath();
+                    context.moveTo(path.p1.x, path.p1.y);
+                    context.lineTo(path.p3.x, path.p3.y);
+                    context.lineTo(path.p4.x, path.p4.y);
+                    context.lineTo(path.p2.x, path.p2.y);
+                    context.strokeStyle = "yellow";
+                    context.stroke();  //绘制3次贝塞尔曲线
+
+                    context.beginPath();
+                    context.moveTo(path.p1.x, path.p1.y);
+                    context.bezierCurveTo(path.p3.x, path.p3.y,  path.p4.x, path.p4.y, path.p2.x, path.p2.y);
+                    context.strokeStyle = "red";
+                    context.stroke();
+
+                    if(i == 1 || i == 0){
+                        drawCircleRed(path.p1.x, path.p1.y);
+                    }else{
+                        drawCircle(path.p1.x, path.p1.y);
+                    }
+                    drawCircle(path.p2.x, path.p2.y);
+                    drawCircle(path.p3.x, path.p3.y);
+                    drawCircle(path.p4.x, path.p4.y);
+                }
+            }
+
+            result();
+        }
+
+        var startAddLineFlag = false;
+        var startAddBesselFlag = false;
+        var startModifyPointFlag = false;
+        var modifyPointIdx = -1;
+        var modifyPointIdx2 = -1;
+        var orign = {x:-100, y:-100};
+
+        function resetFlag() {
+            startAddLineFlag = false;
+            startAddBesselFlag = false;
+            startModifyPointFlag = false;
+            modifyPointIdx = -1;
+            modifyPointIdx2 = -1;
+            //orign.x = -100;
+            //orign.y = -100;
+        }
+
+        function startAddLine() {
+            resetFlag();
+            startAddLineFlag = true;
+        }
+
+        function startAddBessel() {
+            resetFlag();
+            startAddBesselFlag = true;
+        }
+
+        function addLine(point) {
+            if(array.length == 1) {
+                if(orign.x < 0 && orign.y < 0){
+                    orign = point;
+                }else {
+                    var xx = {"type": "line", p1: orign, p2: point};
+                    array.push(xx);
+                }
+            }
+            else if(array.length > 1) {
+                var pt = array[array.length - 1].p2;
+                var xx = {"type":"line",p1: pt, p2:point};
+                array.push(xx);
+            }
+
+            draw();
+
+            //startAddLineFlag = false;
+        }
+
+        function addBessel(point){
+            if(array.length == 1) {
+                if(orign.x < 0 && orign.y < 0){
+                    orign = point;
+                }else{
+                    var pt = orign;
+                    var xx = {"type":"bessel",
+                        p1: pt, p2:point,
+                        p3: {x: pt.x + Math.round((-pt.x + point.x) / 3 * 1), y: pt.y + Math.round((-pt.y + point.y) / 3 * 1)},
+                        p4: {x: pt.x + Math.round((-pt.x + point.x) / 3 * 2), y: pt.y + Math.round((-pt.y + point.y) / 3 * 2)}
+                    };
+                    array.push(xx);
+                }
+            }
+            else if(array.length > 1) {
+                var pt = array[array.length - 1].p2;
+                var xx = {
+                    "type": "bessel", p1: pt, p2: point,
+                    p3: {x: pt.x + Math.round((-pt.x + point.x) / 3 * 1), y: pt.y + Math.round((-pt.y + point.y) / 3 * 1)},
+                    p4: {x: pt.x + Math.round((-pt.x + point.x) / 3 * 2), y: pt.y + Math.round((-pt.y + point.y) / 3 * 2)}
+                };
+                array.push(xx);
+            }
+            draw();
+
+            //startAddBesselFlag = false;
+        }
+
+        function startModifyPoint() {
+            resetFlag();
+            startModifyPointFlag = true;
+        }
+
+        function finishModifyPoint() {
+            resetFlag();
+        }
+
+        function deleteLast() {
+            if(array.length > 1) {
+                array.pop();
+            }
+            if(array.length == 1) {
+                orign.x = -100;
+                orign.y = -100;
+            }
+            draw();
+        }
+
+        function result() {
+
+            var result = "";
+            var data = "";
+            var speed = 400;
+
+            var arrayResult = convertToWorld(array.slice(0));
+            for(var i=1;i<arrayResult.length;i++){
+                var path = arrayResult[i];
+                if(i == 1){
+                    result += path.p1.x + "," + path.p1.y + "<br/>";
+                    //result += "," + path.p2.x + "," + path.p2.y+ ";" + path.type + ";,;,;<br/>";
+
+                    data += path.p1.x + "\t" + path.p1.y + "\n";
+                    //data += speed + "\n" + path.p2.x + "\n" + path.p2.y+ "\n" + path.type + "\n\n\n\n\n";
+                }
+
+                if(i >= 1){
+                    if(path.type == "line"){
+                        result += "," + path.p2.x + "," + path.p2.y+ ";" + "line;,;,;<br/>";
+                        
+                        data += (i) + "\t" + speed + "\t" + path.p2.x + "\t" + path.p2.y+ "\t" + "LINE\n";
+                    }else if(path.type == "bessel") {
+                        result += "," + path.p2.x + "," + path.p2.y + ";" + "bessel;"
+                        + path.p3.x + "," + path.p3.y + ";"
+                        + path.p4.x + "," + path.p4.y + "<br/>";
+
+                        data += (i) + "\t" + speed + "\t" + path.p2.x + "\t" + path.p2.y + "\t" + "BESSEL\t"
+                        + path.p3.x + "\t" + path.p3.y + "\t"
+                        + path.p4.x + "\t" + path.p4.y + "\n";
+                    }
+                }
+            }
+
+            //data += "N/A";
+
+            document.getElementById("result").innerHTML = result;
+            document.getElementById("data").innerHTML = data;
+            document.getElementById("data").scrollTop = document.getElementById("data").scrollHeight
+            //console.log(result);
+        }
+
+        function drawCircleYellow(x, y, r){
+            //context.fillStyle="#000000";
+            context.beginPath();
+            context.arc(x, y, r, 0, Math.PI*2, true);
+            context.closePath();
+            context.strokeStyle = "yellow";
+            context.stroke();
+		}
+
+        function drawCircleRed(x, y){
+            //context.fillStyle="#000000";
+            context.beginPath();
+            context.arc(x, y, 5, 0, Math.PI*2, true);
+            context.closePath();
+            context.strokeStyle = "red";
+            context.stroke();
+		}
+
+        function drawCircle(x, y){
+            //context.fillStyle="#000000";
+            context.beginPath();
+            context.arc(x, y, 5, 0, Math.PI*2, true);
+            context.closePath();
+            context.strokeStyle = "black";
+            context.stroke();
+
+        }
+
+        var getCoordInDocumentExample = function(){
+            var coords = document.getElementById("canvas");
+            var mouseFlag = 0;;
+
+            coords.onmousemove = function(e){
+                var pointer = getCoordInDocument(e);
+                var coord = document.getElementById("coords");
+                coord.innerHTML = "X,Y=("+(pointer.x-E)*2+", "+((H/2+E*2-pointer.y)-E)*2+")";
+            }
+
+            coords.onmousedown = function(e){
+                var isLeft = true;
+                e=e||event;
+                var ec = e.button || e.which;
+                if(e.button == 2 || e.which == 3) { //右键
+                    isLeft = false;
+                    finishModifyPoint();
+
+                    return false;
+                }
+                else if(ec == 1) { //左键
+                    isLeft = true;
+                }
+
+
+                var pointer = getCoordInDocument(e);
+                var coord = document.getElementById("coords");
+                console.log( "X,Y=("+pointer.x+", "+pointer.y+")");
+
+                if(startAddLineFlag == true) {
+                    addLine(pointer);
+                }else if(startAddBesselFlag == true) {
+                    addBessel(pointer);
+                }else if(true || startModifyPointFlag == true) {
+                    if(modifyPointIdx > 0) {
+                        if(modifyPointIdx2 == 1) {
+                            array[modifyPointIdx].p1.x = pointer.x;
+                            array[modifyPointIdx].p1.y = pointer.y;
+
+                            if(modifyPointIdx > 1)
+                            {
+                                array[modifyPointIdx-1].p2.x = pointer.x;
+                                array[modifyPointIdx-1].p2.y = pointer.y;
+                            }
+                        }else if(modifyPointIdx2 == 2){
+                            array[modifyPointIdx].p2.x = pointer.x;
+                            array[modifyPointIdx].p2.y = pointer.y;
+
+                            if(modifyPointIdx < array.length - 1)
+                            {
+                                array[modifyPointIdx+1].p1.x = pointer.x;
+                                array[modifyPointIdx+1].p1.y = pointer.y;
+                            }
+                        }else if(modifyPointIdx2 == 3) {
+                            array[modifyPointIdx].p3.x = pointer.x;
+                            array[modifyPointIdx].p3.y = pointer.y;
+
+                        }else if(modifyPointIdx2 == 4) {
+                            array[modifyPointIdx].p4.x = pointer.x;
+                            array[modifyPointIdx].p4.y = pointer.y;
+
+                        }
+
+                        console.log("finish: X,Y=(" + pointer.x + ", " + pointer.y + ")");
+                        draw();
+                    }
+                    else {
+                        for(var i=1;i<array.length;i++) {
+                            var path = array[i];
+
+                            var a = pointer.x - path.p1.x;
+                            var b = pointer.y - path.p1.y;
+                            var d = a*a + b*b;
+                            if(d < 25){
+                                modifyPointIdx = i;
+                                modifyPointIdx2 = 1;
+                                console.log("choose: X,Y=(" + pointer.x + ", " + pointer.y + ")");
+                                break;
+                            }
+
+                            a = pointer.x - path.p2.x;
+                            b = pointer.y - path.p2.y;
+                            d = a*a + b*b;
+                            if(d < 25){
+                                modifyPointIdx = i;
+                                modifyPointIdx2 = 2;
+                                console.log("choose: X,Y=(" + pointer.x + ", " + pointer.y + ")");
+                                break;
+                            }
+
+                            if(path.p3 != undefined) {
+                                a = pointer.x - path.p3.x;
+                                b = pointer.y - path.p3.y;
+                                d = a*a + b*b;
+                                if(d < 25){
+                                    modifyPointIdx = i;
+                                    modifyPointIdx2 = 3;
+                                    console.log("choose: X,Y=(" + pointer.x + ", " + pointer.y + ")");
+                                    break;
+                                }
+                            }
+
+                            if(path.p4 != undefined) {
+                                a = pointer.x - path.p4.x;
+                                b = pointer.y - path.p4.y;
+                                d = a*a + b*b;
+                                if(d < 25){
+                                    modifyPointIdx = i;
+                                    modifyPointIdx2 = 4;
+                                    console.log("choose: X,Y=(" + pointer.x + ", " + pointer.y + ")");
+                                    break;
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+        var getCoordInDocument = function(e) {
+            e = e || window.event;
+            var x = e.pageX || (e.clientX +
+                    (document.documentElement.scrollLeft
+                    || document.body.scrollLeft));
+            var y= e.pageY || (e.clientY +
+                    (document.documentElement.scrollTop
+                    || document.body.scrollTop));
+            return {'x':x,'y':y};
+            //return {'x':x*2,'y':(400-y)*2};
+        }
+        window.onload = function(){
+            draw();
+            getCoordInDocumentExample();
+        };
+
+    </script>
+
+</body>
+</html>

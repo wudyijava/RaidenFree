@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>SuperKiller.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{540,362}}</string>
+                <key>offset</key>
+                <string>{0,-19}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,38},{540,362}}</string>
+                <key>sourceSize</key>
+                <string>{540,400}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>SuperKiller.png</string>
+            <key>size</key>
+            <string>{544,366}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:c3b2eb2ce9e97b345c0f09c9e32146c9:e116e50466869239445235d76d09ea5f:8e0948f5ed5ca3d07b136a36e0a0c838$</string>
+            <key>textureFileName</key>
+            <string>SuperKiller.png</string>
+        </dict>
+    </dict>
+</plist>
